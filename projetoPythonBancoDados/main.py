@@ -1,1 +1,3 @@
-print("Sistema Inicial")
+from interacaoUsuario import menu_interacao
+
+menu_interacao()
