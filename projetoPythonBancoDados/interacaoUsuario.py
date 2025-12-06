@@ -18,13 +18,14 @@ def menu_interacao():
             conexao = sqlite3.connect("VamosBricar.sqlite")
             cursor = conexao.cursor()
 
+            print("LISTA DE TABELAS:")
             listarTabela(cursor, conexao)
 
             conexao.commit()
             conexao.close()
          
 
-            interacaoBanco()
+            interacaoBanco(cursor, conexao)
 
 
 
